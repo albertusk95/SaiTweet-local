@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" ng-app="saitweet">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -10,8 +10,12 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	
+	<!-- Javascript -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/angular.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
 	
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/home.css">
@@ -22,7 +26,7 @@
 	<nav id="home_navbar" class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container">		
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#home">SaiTweet</a>
+				<a class="navbar-brand" href="#/queryContainer">SaiTweet</a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
@@ -35,27 +39,10 @@
 		</div>
 	</nav> 
 	
-	<div class="content-query" style="border-top: 0"> 
-		<div class="container">
-
-			<div class="text-center wrap_title">
-				<p style="margin-top:0"><h1 id="intro">What would you like to track in real-time?</h1></p>
-			</div>
-			
-			<div id="toggle-keyword-form">
-				<div id="form-toggle" class="text-center wrap_title">
-					<div class="button-container">
-						<a href="#" class="toggle-keyword active">#hashtag</a>
-						<a href="#" class="toggle-keyword">@account</a>
-						<a href="#" class="toggle-keyword">keyword</a>
-						<a href="#" class="toggle-keyword">@mention</a>
-						<a href="#" class="toggle-keyword">URL</a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-    </div>
+	<!-- Controlled by Angular -->
+	<div ng-view></div>
 	
+	<script src="public/app.js"></script>
+	<script src="public/queryContainer/queryContainer.js"></script>
 </body>
 </html>

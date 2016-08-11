@@ -1,0 +1,31 @@
+<div class="content-query" style="border-top: 0"> 
+	<div class="container">
+
+		<div class="text-center wrap_title">
+			<div id="intro">What would you like to track in real-time?</div>
+		</div>
+		
+		<div id="toggle-keyword-form">
+			<div id="form-toggle" class="text-center wrap_title">
+				<div class="button-container">
+					<a class="toggle-keyword active" ng-click="showQueryItems(0)">#hashtag</a>
+					<a class="toggle-keyword" ng-click="showQueryItems(1)">@account</a>
+					<a class="toggle-keyword" ng-click="showQueryItems(2)">keyword</a>
+					<a class="toggle-keyword" ng-click="showQueryItems(3)">@mention</a>
+					<a class="toggle-keyword" ng-click="showQueryItems(4)">URL</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="query-text">
+			<div class="text-center wrap_title">
+				<form action="#" method="post">
+					<span class="inputWithButton">
+						<input type="text" ng-attr-placeholder="{{ queryPlaceholder }}" name="query" id="query"><button id="btn-search"><b>Search</b></button>
+					</span>
+				</form>    
+			</div>
+		</div>
+			
+	</div>
+</div>

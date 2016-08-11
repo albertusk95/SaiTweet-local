@@ -2,6 +2,6 @@
 
 ---------------
 
-Current implementation: Experiment model<br/>
+Current implementation: Experimental mode<br/>
 
-Future implementation: JSP 
+Future implementation: JSP and Tomcat

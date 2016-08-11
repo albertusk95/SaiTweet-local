@@ -1,0 +1,94 @@
+/* 	CSS for home page 
+	Author: Albertus Kelvin
+*/
+
+/* TOP NAVBAR BACKGROUND COLOR */
+/* #2d455c */
+#home_navbar {
+	background-color: #354b60;
+	height: 60px;
+}
+
+/* NAVBAR TEXT COLOR */
+
+/* text: SaiTweet */
+.navbar-brand {
+	color: #ffffff;
+	font-size: 36px;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 12px;
+}
+
+/* text: What is it? How to use? Contact */
+.nav.navbar-nav .menuItem a {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 12px;
+}
+
+/* REMOVE THE HOVER WHEN FOCUSING */ 
+
+/* text: SaiTweet */ 
+.navbar-brand:hover, .navbar-brand:focus {
+    background-color: transparent;
+	color: #ffffff;
+}
+
+/* text: What is it? How to use? Contact */
+.nav.navbar-nav .menuItem a:hover, .nav.navbar-nav .menuItem a:focus {
+    background-color: transparent;
+	color: #ffffff;
+}
+
+/* CONTAINER FOR SEARCHING QUERY */
+.content-query {
+	background-color: #f8f8f8;
+	padding: 200px 0; 
+}
+
+/* INTRODUCTION TEXT: What would you like to track in real-time? */
+#intro {
+	color: #000000;
+	font-family: 'Oswald', sans-serif;
+}
+
+/* TOGGLE KEYWORD FORM */
+
+/* toggle keyword DIV */
+#toggle-keyword-form {
+	padding: 35px 0;
+}
+
+/* toggle keyword text: #hashtag, @account, etc */
+.toggle-keyword {
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	padding-right: 45px;
+}
+
+.toggle-keyword.active {
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 12px;
+	padding: 15px;
+	width: 30px;
+	background-color: #576063;
+	color: #ffffff;
+}
+
+/* toggle keyword when there is a hovering action */
+.toggle-keyword:hover {
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 12px;
+	padding: 15px;
+	width: 30px;
+	background-color: #576063;
+	color: #ffffff;
+	-webkit-transition:all .4s ease;
+	transition:all .4s ease;
+	text-decoration: none;
+}

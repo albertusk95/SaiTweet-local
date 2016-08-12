@@ -1,7 +1,8 @@
 var app = angular.module('saitweet', [
     'ngRoute',
     'queryContainer',
-	'whatisit'
+	'whatisit',
+	'contact'
 ])
 
 .config(['$routeProvider', function($routeProvider) {

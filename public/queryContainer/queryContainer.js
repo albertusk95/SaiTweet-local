@@ -1,3 +1,6 @@
+// the previous selected query type (#hashtag, @account, keyword, etc)
+var prevQueryID = 0;
+
 angular.module('queryContainer', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
@@ -13,17 +16,20 @@ angular.module('queryContainer', ['ngRoute'])
 	// default value of queryPlaceholder
 	$scope.queryPlaceholder = "Enter a #hashtag to track";
 	
+	// default value of chosen query item
+	$scope.activeMenu = 0;
+	
 	$scope.showQueryItems = function(queryID) {
-		if (queryID == 0) {
+		if (queryID === 0) {
 			// #hashtag
 			$scope.queryPlaceholder = "Enter a #hashtag to track";
-		} else if (queryID == 1) {
+		} else if (queryID === 1) {
 			// @account
 			$scope.queryPlaceholder = "Enter an @account to analyze its activity";
-		} else if (queryID == 2) {
+		} else if (queryID === 2) {
 			// keyword
 			$scope.queryPlaceholder = "Enter a keyword to track";
-		} else if (queryID == 3) {
+		} else if (queryID === 3) {
 			// @mention
 			$scope.queryPlaceholder = "Enter a username to track its @mention";
 		} else {
@@ -31,7 +37,8 @@ angular.module('queryContainer', ['ngRoute'])
 			$scope.queryPlaceholder = "Enter a URL to track";
 		}
 		
-		
+		// the chosen query item (#hashtag, @account, keyword, etc)
+		$scope.activeMenu = queryID;
 	};
 	
 }]);

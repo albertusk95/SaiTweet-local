@@ -53,7 +53,7 @@ body {
 
 /* text: What would you like to track in real-time? */
 /* text: What is it? */
-#intro, #whatisit {
+#intro, #whatisit, #contact {
 	color: #000000;
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
